@@ -1,6 +1,13 @@
 <?php
+
+// Check if BASE_PATH is defined, if not, define it
+if (!defined('BASE_PATH')) {
+    define('BASE_PATH', dirname(__DIR__));
+}
+
+
 include 'config.php';
-include '../system/function.php';
+include BASE_PATH . '/system/function.php';
 
 ?>
 
